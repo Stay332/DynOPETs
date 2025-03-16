@@ -104,27 +104,33 @@
 
   // 滑动展示
   .gallery-slider {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 
     .slider-container {
       position: relative;
       width: 100%;
       overflow: hidden;
-      padding-bottom: 30px;
       
       .slider-wrapper {
         display: flex;
         transition: transform 0.5s ease;
+        width: 300%; // 因为一次显示3张图片，所以总宽度是容器的3倍
         
         .slide {
-          min-width: 100%;
+          width: calc(100% / 9); // 总宽度的1/9，因为总共是容器宽度的3倍，每组显示3张
+          padding: 0 0.5rem;
           flex-shrink: 0;
           
           img {
             width: 100%;
-            height: 400px;
+            height: 300px;
             object-fit: cover;
             border-radius: 8px;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+              transform: scale(1.05);
+            }
           }
           
           .caption {
@@ -139,7 +145,7 @@
       .slider-prev,
       .slider-next {
         position: absolute;
-        top: calc(50% - 30px);
+        top: 50%;
         transform: translateY(-50%);
         background: rgba(255,255,255,0.8);
         border: none;
@@ -158,6 +164,11 @@
           background: rgba(255,255,255,0.9);
           transform: translateY(-50%) scale(1.1);
         }
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
       }
       
       .slider-prev {
@@ -170,15 +181,11 @@
 
       .slider-dots {
         position: absolute;
-        bottom: 0;
+        bottom: -25px;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         gap: 0.8rem;
-        padding: 1rem;
-        background: rgba(255,255,255,0.8);
-        border-radius: 20px;
-        z-index: 10;
         
         .dot {
           width: 10px;
@@ -187,7 +194,6 @@
           background: rgba(0,0,0,0.2);
           cursor: pointer;
           transition: all 0.3s ease;
-          border: 2px solid transparent;
           
           &:hover {
             background: rgba(0,0,0,0.4);
@@ -196,7 +202,34 @@
           &.active {
             background: $blue-color;
             transform: scale(1.2);
-            border-color: white;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slider-container {
+        .slider-wrapper {
+          .slide {
+            width: calc(100% / 6); // 在移动端一次显示2张图片
+            
+            img {
+              height: 200px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .slider-container {
+        .slider-wrapper {
+          .slide {
+            width: calc(100% / 3); // 在小屏幕上一次只显示1张图片
+            
+            img {
+              height: 150px;
+            }
           }
         }
       }
@@ -313,6 +346,59 @@
             height: 300px;
           }
         }
+      }
+    }
+  }
+
+  // 点云展示
+  .pointcloud-viewer {
+    margin-bottom: 3rem;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    #pointcloud-container {
+      width: 100%;
+      height: 500px;
+      background: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+        outline: none;
+      }
+
+      .error-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: #ff3636;
+        font-size: 1rem;
+        text-align: center;
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #pointcloud-container {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #pointcloud-container {
+        height: 300px;
       }
     }
   }

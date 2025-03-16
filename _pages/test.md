@@ -36,12 +36,18 @@ gallery_masonry:
     caption: "瀑布流图片6"
 
 gallery_slider:
+  - url: "/assets/img/1.jpg"
+    caption: "图片 1"
   - url: "/assets/img/2.jpg"
-    caption: "滑动图片1"
-  - url: "/assets/img/2.jpg"
-    caption: "滑动图片2"
-  - url: "/assets/img/2.jpg"
-    caption: "滑动图片3"
+    caption: "图片 2"
+  - url: "/assets/img/3.jpg"
+    caption: "图片 3"
+  - url: "/assets/img/4.jpg"
+    caption: "图片 4"
+  - url: "/assets/img/5.jpg"
+    caption: "图片 5"
+  - url: "/assets/img/6.jpg"
+    caption: "图片 6"
 
 gallery_comparison:
   - before:
@@ -56,6 +62,8 @@ gallery_comparison:
     after:
       url: "/assets/img/2.jpg"
       caption: "对比后2"
+
+pointcloud: true
 ---
 
 ## 图片展示说明
@@ -67,12 +75,29 @@ gallery_comparison:
 3. **瀑布流布局**：不规则网格，适合展示不同高度的图片
 4. **滑动展示**：可以左右滑动查看的图片轮播
 5. **对比展示**：并排展示两张图片进行对比
+6. **点云展示**：三维点云数据的交互式展示
 
 每种布局都有其特点：
 
 - 网格布局适合展示同等重要性的图片
 - 瀑布流适合展示不同尺寸的图片
-- 滑动展示适合一次展示一张重要图片
+- 滑动展示适合一次展示多张相关图片
 - 对比展示适合展示前后对比或者不同版本的图片
+- 点云展示支持完整的三维交互：
+  - 鼠标左键：旋转视角
+  - 鼠标右键：平移视角
+  - 鼠标滚轮：缩放视角
 
-所有图片都添加了悬停效果和圆角处理，使界面更加美观。在移动设备上会自动调整布局以确保最佳显示效果。 
+所有展示模块都进行了响应式设计，在不同设备上都能获得良好的展示效果。
+
+## 滑动展示说明
+
+这个滑动展示模块一次展示3张图片，可以：
+- 点击左右箭头切换图片组
+- 使用圆点指示器直接跳转
+- 等待自动轮播
+- 鼠标悬停时暂停自动轮播
+
+在移动设备上会自动调整为：
+- 平板：一次显示2张图片
+- 手机：一次显示1张图片 
