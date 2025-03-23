@@ -9,9 +9,9 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/DynOPETs/";
     },
-  },{id: "nav-图片展示测试页面",
-          title: "图片展示测试页面",
-          description: "展示各种图片布局和展示方式",
+  },{id: "nav-image-display-test-page",
+          title: "Image Display Test Page",
+          description: "Showcase of various image layouts and display methods",
           section: "Navigation",
           handler: () => {
             window.location.href = "/DynOPETs/test/";
@@ -25,14 +25,14 @@ ninja.data = [{
           },
         },{id: "nav-calibration",
           title: "Calibration",
-          description: "数据集校准信息",
+          description: "Dataset Calibration Information",
           section: "Navigation",
           handler: () => {
             window.location.href = "/DynOPETs/calibration/";
           },
         },{id: "nav-download",
           title: "Download",
-          description: "数据集下载",
+          description: "Downloading our datasets",
           section: "Navigation",
           handler: () => {
             window.location.href = "/DynOPETs/download/";
@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-contact",
           title: "Contact",
-          description: "联系我们",
+          description: "Contact Us",
           section: "Navigation",
           handler: () => {
             window.location.href = "/DynOPETs/contact/";
