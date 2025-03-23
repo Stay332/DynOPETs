@@ -2,49 +2,53 @@
 layout: page
 title: Download
 permalink: /download/
-description: 数据集下载
+description: Downloading our datasets
 nav: true
 nav_order: 4
 ---
 
-## 数据集下载
+<!-- <div style="font-family: 'Book Antiqua', serif;">
 
-在这个页面，您可以下载我们的公开数据集。所有数据集均免费提供给学术和研究用途。
+## Dataset Downloads
 
-### 可用数据集
+On this page, you can download our public datasets. All datasets are freely available for academic and research purposes.
 
-| 数据集名称 | 版本 | 大小 | 发布日期 | 下载链接 |
-|------------|------|------|----------|----------|
-| 数据集1 | v1.0 | 2.3GB | 2023-06-15 | [下载](#) |
-| 数据集2 | v2.1 | 4.5GB | 2023-09-22 | [下载](#) |
-| 数据集3 | v1.2 | 1.8GB | 2024-01-10 | [下载](#) |
+### Available Datasets
 
-### 数据格式
+| Dataset Name | Version | Size | Release Date | Download Link |
+|--------------|---------|------|--------------|---------------|
+| Dataset 1 | v1.0 | 2.3GB | 2023-06-15 | [Download](#) |
+| Dataset 2 | v2.1 | 4.5GB | 2023-09-22 | [Download](#) |
+| Dataset 3 | v1.2 | 1.8GB | 2024-01-10 | [Download](#) |
 
-我们的数据集提供以下格式：
+### Data Formats
 
-- CSV格式（用于表格数据）
-- JSON格式（用于结构化数据）
-- HDF5格式（用于大型多维数据）
+Our datasets are available in the following formats:
 
-### 使用条款
+- CSV format (for tabular data)
+- JSON format (for structured data)
+- HDF5 format (for large multidimensional data)
 
-使用我们的数据集时，请遵循以下条款：
+### Terms of Use
 
-1. 数据集仅供学术和研究用途使用
-2. 在使用我们的数据集的任何出版物中，请引用我们的论文
-3. 不得将数据集用于商业目的，除非获得书面许可
+When using our datasets, please follow these terms:
 
-### 引用方式
+1. Datasets are for academic and research purposes only
+2. Please cite our paper in any publication using our datasets
+3. Datasets may not be used for commercial purposes without written permission
 
-如果您在研究中使用了我们的数据集，请使用以下格式进行引用：
+### Citation
+
+If you use our datasets in your research, please cite them using the following format:
 
 ```
-作者, (年份). "数据集名称". 版本号. 发布机构. DOI标识符
+Authors, (Year). "Dataset Name". Version. Publishing Organization. DOI identifier
 ```
 
-### 数据集更新
+### Dataset Updates
 
-我们会定期更新数据集。请订阅我们的通知，以获取最新的数据集更新信息。
+We regularly update our datasets. Please subscribe to our notifications to receive information about the latest dataset updates.
 
-如有任何问题，请[联系我们](/contact/)。 
+For any questions, please [contact us](/contact/).
+
+</div>  -->

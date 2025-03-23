@@ -2,58 +2,62 @@
 layout: page
 title: Contact
 permalink: /contact/
-description: 联系我们
+description: Contact Us
 nav: true
 nav_order: 6
 ---
 
-## 联系我们
+<!-- <div style="font-family: 'Book Antiqua', serif;">
 
-如果您对我们的数据集有任何问题、建议或合作意向，请随时与我们联系。我们的团队将尽快回复您的询问。
+## Contact Us
 
-### 联系方式
+If you have any questions, suggestions, or collaboration interests regarding our datasets, please feel free to contact us. Our team will respond to your inquiries as soon as possible.
 
-- **电子邮件**: dataset@example.com
-- **电话**: +86 123 4567 8910
-- **地址**: 中国北京市海淀区XX路XX号，邮编100000
+### Contact Information
 
-### 技术支持
+- **Email**: dataset@example.com
+- **Phone**: +86 123 4567 8910
+- **Address**: XX Road, Haidian District, Beijing, China 100000
 
-如果您在使用我们的数据集过程中遇到技术问题，请发送邮件至 support@example.com，并在邮件中详细描述您遇到的问题，我们的技术支持团队将会为您提供帮助。
+### Technical Support
 
-### 合作机会
+If you encounter any technical issues while using our datasets, please send an email to support@example.com with a detailed description of your problem. Our technical support team will assist you.
 
-我们欢迎与学术机构、研究组织和企业建立合作关系。如果您有合作意向，请发送邮件至 cooperation@example.com，说明您的合作意向和具体需求。
+### Partnership Opportunities
 
-### 反馈与建议
+We welcome partnerships with academic institutions, research organizations, and enterprises. If you are interested in collaboration, please send an email to cooperation@example.com with your partnership proposal and specific requirements.
 
-您的反馈对我们非常重要。如果您有任何关于数据集的建议或发现任何问题，请通过以下表单告诉我们：
+### Feedback and Suggestions
+
+Your feedback is very important to us. If you have any suggestions about our datasets or discover any issues, please let us know through the following form:
 
 <form id="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
   <div class="form-group">
-    <label for="name">姓名</label>
+    <label for="name">Name</label>
     <input type="text" class="form-control" id="name" name="name" required>
   </div>
   <div class="form-group">
-    <label for="email">电子邮件</label>
+    <label for="email">Email</label>
     <input type="email" class="form-control" id="email" name="email" required>
   </div>
   <div class="form-group">
-    <label for="subject">主题</label>
+    <label for="subject">Subject</label>
     <input type="text" class="form-control" id="subject" name="subject" required>
   </div>
   <div class="form-group">
-    <label for="message">消息</label>
+    <label for="message">Message</label>
     <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">提交</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-### 关注我们
+### Follow Us
 
-您也可以通过以下社交媒体平台关注我们，获取最新的数据集更新和研究动态：
+You can also follow us on the following social media platforms to get the latest dataset updates and research developments:
 
 - [Twitter](#)
 - [LinkedIn](#)
 - [GitHub](#)
-- [微信公众号](#) 
+- [WeChat Official Account](#)
+
+</div>  -->

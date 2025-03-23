@@ -2,40 +2,44 @@
 layout: page
 title: Calibration
 permalink: /calibration/
-description: 数据集校准信息
+description: Dataset Calibration Information
 nav: true
 nav_order: 3
 ---
 
-## 数据集校准
+<!-- <div style="font-family: 'Book Antiqua', serif;">
 
-在这个页面，您可以找到关于我们数据集校准方法和过程的详细信息。
+## Dataset Calibration
 
-### 校准方法
+On this page, you can find detailed information about our dataset calibration methods and processes.
 
-我们采用了严格的校准流程，确保数据集的准确性和可靠性。校准过程包括以下步骤：
+### Calibration Methods
 
-1. **数据收集**：使用高精度传感器收集原始数据
-2. **预处理**：去除噪声和异常值
-3. **标定**：与标准参考数据进行比对
-4. **验证**：通过交叉验证确保校准结果的稳定性
+We employ a rigorous calibration process to ensure the accuracy and reliability of our datasets. The calibration process includes the following steps:
 
-### 校准结果
+1. **Data Collection**: Using high-precision sensors to collect raw data
+2. **Preprocessing**: Removing noise and outliers
+3. **Calibration**: Comparison with standard reference data
+4. **Validation**: Ensuring calibration stability through cross-validation
 
-下表展示了我们数据集的校准结果：
+### Calibration Results
 
-| 参数 | 精度 | 误差范围 |
-|------|------|----------|
-| 参数1 | 99.5% | ±0.2% |
-| 参数2 | 98.7% | ±0.5% |
-| 参数3 | 99.2% | ±0.3% |
+The following table shows the calibration results of our datasets:
 
-### 校准工具
+| Parameter | Accuracy | Error Range |
+|-----------|----------|-------------|
+| Parameter 1 | 99.5% | ±0.2% |
+| Parameter 2 | 98.7% | ±0.5% |
+| Parameter 3 | 99.2% | ±0.3% |
 
-我们使用了以下工具进行数据校准：
+### Calibration Tools
 
-- 专业校准软件
-- 高精度参考设备
-- 自定义校准算法
+We use the following tools for data calibration:
 
-如需了解更多关于校准方法的信息，请[联系我们](/contact/)。 
+- Professional calibration software
+- High-precision reference equipment
+- Custom calibration algorithms
+
+For more information about our calibration methods, please [contact us](/contact/).
+
+</div>  -->
