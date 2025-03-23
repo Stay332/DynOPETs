@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://greatoyster.github.io/Dyna-OPETs/sitemap.xml
+Sitemap: https://Stay332.github.io/DynOPETs/sitemap.xml

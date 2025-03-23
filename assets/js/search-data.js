@@ -7,49 +7,49 @@ ninja.data = [{
     title: "Home",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/Dyna-OPETs/";
+      window.location.href = "/DynOPETs/";
     },
   },{id: "nav-图片展示测试页面",
           title: "图片展示测试页面",
           description: "展示各种图片布局和展示方式",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Dyna-OPETs/test/";
+            window.location.href = "/DynOPETs/test/";
           },
         },{id: "nav-about",
           title: "About",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Dyna-OPETs/about/";
+            window.location.href = "/DynOPETs/about/";
           },
         },{id: "nav-calibration",
           title: "Calibration",
           description: "数据集校准信息",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Dyna-OPETs/calibration/";
+            window.location.href = "/DynOPETs/calibration/";
           },
         },{id: "nav-download",
           title: "Download",
           description: "数据集下载",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Dyna-OPETs/download/";
+            window.location.href = "/DynOPETs/download/";
           },
         },{id: "nav-competition",
           title: "Competition",
           description: "Information about our competitions",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Dyna-OPETs/competition/";
+            window.location.href = "/DynOPETs/competition/";
           },
         },{id: "nav-contact",
           title: "Contact",
           description: "联系我们",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/Dyna-OPETs/contact/";
+            window.location.href = "/DynOPETs/contact/";
           },
         },{id: "post-a-post-with-image-galleries",
       
@@ -59,7 +59,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/12/04/photo-gallery.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/12/04/photo-gallery.html";
         
       },
     },{id: "post-a-post-with-tabs",
@@ -70,7 +70,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/05/01/tabs.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/05/01/tabs.html";
         
       },
     },{id: "post-a-post-with-typograms",
@@ -81,7 +81,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/04/29/typograms.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/04/29/typograms.html";
         
       },
     },{id: "post-a-post-that-can-be-cited",
@@ -92,7 +92,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/04/28/post-citation.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/04/28/post-citation.html";
         
       },
     },{id: "post-a-post-with-pseudo-code",
@@ -103,7 +103,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/04/15/pseudocode.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/04/15/pseudocode.html";
         
       },
     },{id: "post-a-post-with-code-diff",
@@ -114,7 +114,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/01/27/code-diff.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/01/27/code-diff.html";
         
       },
     },{id: "post-a-post-with-advanced-image-components",
@@ -125,7 +125,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/01/27/advanced-images.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/01/27/advanced-images.html";
         
       },
     },{id: "post-a-post-with-vega-lite",
@@ -136,7 +136,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/01/27/vega-lite.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/01/27/vega-lite.html";
         
       },
     },{id: "post-a-post-with-geojson",
@@ -147,7 +147,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/01/26/geojson-map.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/01/26/geojson-map.html";
         
       },
     },{id: "post-a-post-with-echarts",
@@ -158,7 +158,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/01/26/echarts.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/01/26/echarts.html";
         
       },
     },{id: "post-a-post-with-chart-js",
@@ -169,7 +169,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2024/01/26/chartjs.html";
+          window.location.href = "/DynOPETs/sample-posts/2024/01/26/chartjs.html";
         
       },
     },{id: "post-a-post-with-tikzjax",
@@ -180,7 +180,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/12/12/tikzjax.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/12/12/tikzjax.html";
         
       },
     },{id: "post-a-post-with-bibliography",
@@ -191,7 +191,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/07/12/post-bibliography.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/07/12/post-bibliography.html";
         
       },
     },{id: "post-a-post-with-jupyter-notebook",
@@ -202,7 +202,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/07/04/jupyter-notebook.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/07/04/jupyter-notebook.html";
         
       },
     },{id: "post-a-post-with-custom-blockquotes",
@@ -213,7 +213,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/05/12/custom-blockquotes.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/05/12/custom-blockquotes.html";
         
       },
     },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
@@ -224,7 +224,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/04/25/sidebar-table-of-contents.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/04/25/sidebar-table-of-contents.html";
         
       },
     },{id: "post-a-post-with-audios",
@@ -235,7 +235,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/04/25/audios.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/04/25/audios.html";
         
       },
     },{id: "post-a-post-with-videos",
@@ -246,7 +246,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/04/24/videos.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/04/24/videos.html";
         
       },
     },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
@@ -257,7 +257,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/03/20/tables.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/03/20/tables.html";
         
       },
     },{id: "post-a-post-with-table-of-contents",
@@ -268,7 +268,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2023/03/20/table-of-contents.html";
+          window.location.href = "/DynOPETs/sample-posts/2023/03/20/table-of-contents.html";
         
       },
     },{id: "post-a-post-with-giscus-comments",
@@ -279,7 +279,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/external-services/2022/12/10/giscus-comments.html";
+          window.location.href = "/DynOPETs/sample-posts/external-services/2022/12/10/giscus-comments.html";
         
       },
     },{id: "post-a-post-with-redirect",
@@ -290,7 +290,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/assets/pdf/example_pdf.pdf";
+          window.location.href = "/DynOPETs/assets/pdf/example_pdf.pdf";
         
       },
     },{id: "post-a-post-with-diagrams",
@@ -301,7 +301,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/2021/07/04/diagrams.html";
+          window.location.href = "/DynOPETs/2021/07/04/diagrams.html";
         
       },
     },{id: "post-a-distill-style-blog-post",
@@ -312,7 +312,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/2021/05/22/distill.html";
+          window.location.href = "/DynOPETs/2021/05/22/distill.html";
         
       },
     },{id: "post-a-post-with-twitter",
@@ -323,7 +323,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/external-services/2020/09/28/twitter.html";
+          window.location.href = "/DynOPETs/sample-posts/external-services/2020/09/28/twitter.html";
         
       },
     },{id: "post-a-post-with-disqus-comments",
@@ -334,7 +334,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/external-services/2015/10/20/disqus-comments.html";
+          window.location.href = "/DynOPETs/sample-posts/external-services/2015/10/20/disqus-comments.html";
         
       },
     },{id: "post-a-post-with-math",
@@ -345,7 +345,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2015/10/20/math.html";
+          window.location.href = "/DynOPETs/sample-posts/2015/10/20/math.html";
         
       },
     },{id: "post-a-post-with-code",
@@ -356,7 +356,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2015/07/15/code.html";
+          window.location.href = "/DynOPETs/sample-posts/2015/07/15/code.html";
         
       },
     },{id: "post-a-post-with-images",
@@ -367,7 +367,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2015/05/15/images.html";
+          window.location.href = "/DynOPETs/sample-posts/2015/05/15/images.html";
         
       },
     },{id: "post-a-post-with-formatting-and-links",
@@ -378,7 +378,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/Dyna-OPETs/sample-posts/2015/03/15/formatting-and-links.html";
+          window.location.href = "/DynOPETs/sample-posts/2015/03/15/formatting-and-links.html";
         
       },
     },{
@@ -400,7 +400,7 @@ ninja.data = [{
         title: 'RSS Feed',
         section: 'Socials',
         handler: () => {
-          window.open("/Dyna-OPETs/feed.xml", "_blank");
+          window.open("/DynOPETs/feed.xml", "_blank");
         },
       },{
         id: 'social-scholar',
