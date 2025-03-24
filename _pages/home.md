@@ -7,5 +7,8 @@ nav: false
 nav_order: 1
 ---
 
-# Welcome to the webpage of DynOPETs datasets!
+<!-- <div style="font-family: 'Book Antiqua', serif;">
+
+
+</div> -->
 
