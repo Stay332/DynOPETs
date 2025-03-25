@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: test
 title: "Image Display Test Page"
 description: "Showcase of various image layouts and display methods"
@@ -104,4 +104,4 @@ On mobile devices, it automatically adjusts to:
 - Tablet: Show 2 images at a time
 - Mobile: Show 1 image at a time
 
-</div> 
+</div>  -->
