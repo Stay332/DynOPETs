@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Competition
 permalink: /competition/
@@ -9,4 +9,4 @@ nav_order: 5
 
 # Competition Information
 
-Welcome to our competition page. More details about upcoming competitions will be posted here. 
+Welcome to our competition page. More details about upcoming competitions will be posted here.  -->

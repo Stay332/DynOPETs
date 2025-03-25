@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: About
 permalink: /about/
@@ -65,4 +65,4 @@ If you are interested in our work, we welcome you to:
 
 For detailed contact information, please visit our [Contact page](/contact/).
 
-</div>
+</div> -->

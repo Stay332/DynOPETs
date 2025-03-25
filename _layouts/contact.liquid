@@ -1,0 +1,196 @@
+---
+layout: default
+---
+
+<div class="col-12 mt-4 text-center">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-description">{{ page.description }}</p>
+</div>
+
+{{ content }}
+
+<div class="contact-section">
+  <div class="contact-card">
+    <img src="https://github.com/Launch-on-Titania.png" alt="Xiangting Meng" class="avatar">
+    <h3>Xiangting Meng</h3>
+    <p class="title">Graduate Student at ShanghaiTech University</p>
+    <p class="bio">Research focus on Robotics, SLAM and Computer Vision</p>
+    <div class="email-container">
+      <p class="email"><span id="email1"></span> / <span id="email1_2"></span></p>
+    </div>
+  </div>
+  
+  <div class="contact-card">
+    <img src="https://github.com/greatoyster.png" alt="Jiaqi Yang" class="avatar">
+    <h3>Jiaqi Yang</h3>
+    <p class="title">PhD Candidate at Mobile Perception Lab, ShanghaiTech University</p>
+    <div class="links">
+      <a href="https://github.com/greatoyster" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://scholar.google.com/citations?user=f7ox7CIAAAAJ&hl=en" target="_blank">
+        <i class="fas fa-graduation-cap"></i> Google Scholar
+      </a>
+    </div>
+    <div class="email-container">
+      <p class="email"><span id="email2"></span></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 等待DOM完全加载后再执行
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+      // 邮箱地址的编码版本
+      const email1 = "bWVuZ3h0QHNoYW5naGFpdGVjaC5lZHUuY24=";
+      const email1_2 = "YXJub3h0bWFubkBnbWFpbC5jb20=";
+      const email2 = "eWFuZ2pxMTIwMjJAc2hhbmdoYWl0ZWNoLmVkdS5jbg==";
+      
+      // 解码并显示邮箱地址
+      document.getElementById('email1').innerHTML = atob(email1);
+      document.getElementById('email1_2').innerHTML = atob(email1_2);
+      document.getElementById('email2').innerHTML = atob(email2);
+      
+      // 强制卡片水平排列
+      const pageContainer = document.querySelector('.contact-section').parentElement;
+      if (pageContainer) {
+        pageContainer.style.maxWidth = '100%';
+        pageContainer.style.width = '100%';
+        pageContainer.style.padding = '0';
+        pageContainer.style.margin = '0 auto';
+        pageContainer.style.overflow = 'visible';
+      }
+    } catch (e) {
+      console.error('邮箱解码失败:', e);
+    }
+  });
+</script>
+
+<style>
+  .col-12.mt-4.text-center {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .col-12.mt-4.text-center .post-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .col-12.mt-4.text-center .post-description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1), 0 1px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 320px;
+    min-width: 300px;
+    text-align: center;
+    flex-shrink: 0;
+    position: relative;
+    padding-bottom: 100px;
+    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3), 0 3px 10px rgba(0,0,0,0.3);
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #f0f0f0;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    min-height: 3rem;
+  }
+  
+  .bio {
+    font-size: 1rem;
+    color: #777;
+    margin: 1rem 0;
+    line-height: 1.4;
+    min-height: 3rem;
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    min-height: 3rem;
+  }
+  
+  .links a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #fff;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  }
+  
+  .links a:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .links i {
+    margin-right: 0.5rem;
+  }
+  
+  .email-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: none;
+    padding: 1.5rem 0;
+  }
+  
+  .email {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+</style> 
