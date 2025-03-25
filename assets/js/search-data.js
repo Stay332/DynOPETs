@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/DynOPETs/";
     },
-  },{id: "nav-image-display-test-page",
-          title: "Image Display Test Page",
-          description: "Showcase of various image layouts and display methods",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/DynOPETs/test/";
-          },
-        },{id: "nav-about",
+  },{id: "nav-about",
           title: "About",
           description: "",
           section: "Navigation",
