@@ -1,0 +1,230 @@
+---
+layout: page
+---
+
+<style>
+  .download-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .download-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .download-table th,
+  .download-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .download-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+
+  .download-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--global-theme-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .download-button:hover {
+    background-color: var(--global-theme-color-dark);
+  }
+
+  .structure-section {
+    margin-top: 40px;
+    background: linear-gradient(135deg, rgba(var(--global-theme-color-rgb), 0.05) 0%, rgba(var(--global-theme-color-rgb), 0.1) 100%);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .structure-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .file-tree {
+    font-family: 'Consolas', monospace;
+    line-height: 1.6;
+  }
+
+  .file-tree .folder {
+    color: var(--global-theme-color);
+    font-weight: 600;
+  }
+
+  .file-tree .file {
+    color: var(--global-theme-color-dark);
+  }
+
+  .tree-item {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .tree-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgba(var(--global-theme-color-rgb), 0.2);
+  }
+
+  .tree-item:last-child::before {
+    height: 50%;
+  }
+
+  .tree-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: rgba(var(--global-theme-color-rgb), 0.2);
+  }
+
+  .tree-item:last-child::after {
+    width: 10px;
+  }
+
+  .tree-content {
+    position: relative;
+    padding: 5px 0;
+  }
+
+  .tree-content::before {
+    content: "├─";
+    position: absolute;
+    left: -20px;
+    color: rgba(var(--global-theme-color-rgb), 0.5);
+  }
+
+  .tree-content:last-child::before {
+    content: "└─";
+  }
+
+  .structure-section h2 {
+    color: #000000;
+    margin-bottom: 25px;
+  }
+</style>
+
+<div class="download-section">
+  <h2 style="font-family: 'Inter', sans-serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">DynOPETs Dataset</h2>
+  
+  <div class="download-links">
+    <table class="download-table">
+      <thead>
+        <tr>
+          <th>Dataset Name</th>
+          <th>Version</th>
+          <th>Size</th>
+          <th>Release Date</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ content }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="structure-section">
+    <h2 style="font-family: 'Inter', sans-serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">Dataset Structure</h2>
+    
+    <div class="structure-card">
+      <div class="file-tree">
+        <div class="tree-item">
+          <div class="tree-content">
+            <div class="folder">sequence/</div>
+          </div>
+          
+          <div class="tree-item">
+            <div class="tree-content">
+              <div class="folder">color/</div>
+            </div>
+            <div class="tree-item">
+              <div class="tree-content">
+                <div class="file">0000_color.png</div>
+                <div class="file">0001_color.png</div>
+                <div class="file">...</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tree-item">
+            <div class="tree-content">
+              <div class="folder">depth/</div>
+            </div>
+            <div class="tree-item">
+              <div class="tree-content">
+                <div class="file">0000_depth.png</div>
+                <div class="file">0001_depth.png</div>
+                <div class="file">...</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tree-item">
+            <div class="tree-content">
+              <div class="folder">mask/</div>
+            </div>
+            <div class="tree-item">
+              <div class="tree-content">
+                <div class="file">0000_mask.png</div>
+                <div class="file">0001_mask.png</div>
+                <div class="file">...</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tree-item">
+            <div class="tree-content">
+              <div class="folder">model/</div>
+            </div>
+            <div class="tree-item">
+              <div class="tree-content">
+                <div class="file">Model.jpg</div>
+              </div>
+            </div>
+            <div class="tree-item">
+              <div class="tree-content">
+                <div class="file">Model.mtl</div>
+              </div>
+            </div>
+            <div class="tree-item">
+              <div class="tree-content">
+                <div class="file">Model.obj</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tree-item">
+            <div class="tree-content">
+              <div class="file">intrinsics.txt</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
