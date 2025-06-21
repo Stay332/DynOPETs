@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-download",
           title: "Download",
-          description: "Downloading our datasets",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/DynOPETs/download/";
