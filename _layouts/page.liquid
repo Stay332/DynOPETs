@@ -22,111 +22,237 @@ layout: default
   }
 
   .post-header {
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
   }
-  
+
   .post-title {
     max-width: 1200px;
-    margin: 0 auto;
-    font-size: 2.2rem;
-    line-height: 1.3;
+    margin: 5px auto;
+    font-size: 2.4rem;
+    line-height: 1.4;
     text-align: center;
-    margin-bottom: 40px;
     font-family: 'Book Antiqua', serif;
   }
-  
+
+  .acceptance-notice {
+    max-width: 800px;
+    margin: 2px auto;
+    padding: 8px 0;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--global-theme-color);
+  }
+
   .authors {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 5px auto;
     text-align: center;
-    margin-bottom: 8px;
     font-family: 'Book Antiqua', serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.6;
   }
-  
+
   .affiliations {
     max-width: 800px;
-    margin: 0 auto;
-    font-size: 1rem;
+    margin: 10px auto;
+    font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 8px;
     font-family: 'Book Antiqua', serif;
     line-height: 1.6;
   }
-  
+
   .notes {
     max-width: 800px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #666;
     text-align: center;
-    margin: 0 auto;
+    margin: 2px auto;
     font-family: 'Book Antiqua', serif;
     line-height: 1.6;
   }
-  
+
+  .paper-section {
+    margin: 40px auto 0;
+    max-width: 900px;
+    font-family: 'Inter', serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .section-heading {
+    font-family: 'Book Antiqua', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 10px 10px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .button i {
+    margin-right: 8px;
+  }
+
+  .video-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  /* Keep the player inside the viewport instead of the hard-coded 900x506 */
+  .video-container iframe {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+
+  .abstract-body {
+    text-align: justify;
+  }
+
+  /* Lines up with the first email, which sits after the "Xiangting Meng:" label */
+  .contact-indent {
+    margin-left: 93px;
+  }
+
+  .pipeline-section img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+  }
+
   .post article {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 2rem;
   }
 
-  .button i {
-    margin-right: 8px;
+  @media (max-width: 768px) {
+    .post-header,
+    .post article {
+      padding: 0 1rem;
+    }
+
+    .post-title {
+      font-size: 1.6rem;
+    }
+
+    .acceptance-notice {
+      font-size: 1.3rem;
+    }
+
+    .authors {
+      font-size: 1.05rem;
+    }
+
+    .affiliations {
+      font-size: 0.95rem;
+    }
+
+    .notes {
+      font-size: 0.85rem;
+    }
+
+    .section-heading {
+      font-size: 1.4rem;
+    }
+
+    .paper-section {
+      margin-top: 28px;
+      font-size: 1rem;
+    }
+
+    .button {
+      padding: 8px 18px;
+      margin: 0 4px 8px;
+      font-size: 0.95rem;
+    }
+
+    /* Justified text shreds into rivers at this column width */
+    .abstract-body {
+      text-align: left;
+    }
+
+    /* The alignment indent under the first email has no room to spare */
+    .contact-indent {
+      margin-left: 0;
+    }
   }
 </style>
 
 <div class="post">
   <header class="post-header">
     {% if page.permalink == "/" %}
-      <div class="post-header">
-        <div class="post-title" style="font-family: 'Book Antiqua', serif; width: 100%; max-width: 1200px; margin: 5px auto; text-align: center; font-size: 2.4rem; line-height: 1.4; padding: 0 20px;">
+      <div class="paper-header">
+        <div class="post-title">
           Dyn<span style="color: var(--global-theme-color);">OPET</span>s: A Versatile Benchmark for Dynamic <span style="color: var(--global-theme-color);">O</span>bject <span style="color: var(--global-theme-color);">P</span>ose <span style="color: var(--global-theme-color);">E</span>stimation and <span style="color: var(--global-theme-color);">T</span>racking in Moving Camera Scenarios
         </div>
-        <div class="acceptance-notice" style="font-family: 'Inter', sans-serif; max-width: 800px; margin: 2px auto; text-align: center; font-size: 1.8rem; font-weight: 900; color: var(--global-theme-color); padding: 8px 0;">
-           <strong>RA-L 2025</strong> 
+        <div class="acceptance-notice">
+           <strong>RA-L 2025</strong>
         </div>
-        <div class="authors" style="font-family: 'Book Antiqua', serif; max-width: 800px; margin: 5px auto; text-align: center; font-size: 1.4rem; line-height: 1.6;">
+        <div class="authors">
           <span style="font-weight: bold;">Xiangting Meng</span><sup>1*</sup>, <span style="font-weight: bold;">Jiaqi Yang</span><sup>1*</sup>, <span style="font-weight: bold;">Mingshu Chen</span><sup>2</sup>, <span style="font-weight: bold;">Chenxin Yan</span><sup>1</sup><br>
           <span style="font-weight: bold;">Yujiao Shi</span><sup>1</sup>, <span style="font-weight: bold;">Wenchao Ding</span><sup>2</sup>, <span style="font-weight: bold;">Laurent Kneip</span><sup>1, 3</sup>
         </div>
-        <div class="notes" style="font-family: 'Book Antiqua', serif; max-width: 800px; margin: 2px auto; text-align: center; font-size: 1.1rem; line-height: 1.6;">
+        <div class="notes">
           * Authors contributed equally to this work<br>
         </div>
-        <div class="affiliations" style="font-family: 'Book Antiqua', serif; max-width: 800px; margin: 10px auto; text-align: center; font-size: 1.2rem; line-height: 1.6;">
+        <div class="affiliations">
           <sup>1</sup> ShanghaiTech University, Mobile Perception Lab<br>
           <sup>2</sup> Fudan University, Multi-Agent Robotic Systems Lab<br>
           <sup>3</sup> Shanghai Engineering Research Center of Intelligent Vision and Imaging
         </div>
-        <div class="button-container" style="margin-top: 20px; text-align: center;">
-          <a href="https://arxiv.org/pdf/2503.19625" class="button" style="display: inline-block; padding: 10px 30px; margin: 0 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 25px; font-family: 'Inter', sans-serif; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"><i class="fas fa-file-pdf"></i>Paper</a>
-          <a href="assets/pdf/supp.pdf" class="button" style="display: inline-block; padding: 10px 30px; margin: 0 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 25px; font-family: 'Inter', sans-serif; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"><i class="fas fa-file-pdf"></i>Supp</a>
-          <a href="https://youtu.be/9u89MLe9XL0?si=9E8Ky76ZFyr6ogur" class="button" style="display: inline-block; padding: 10px 30px; margin: 0 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 25px; font-family: 'Inter', sans-serif; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"><i class="fab fa-youtube"></i>Video</a>
-          <a href="https://github.com/Launch-on-Titania/DynOPETs" class="button" style="display: inline-block; padding: 10px 30px; margin: 0 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 25px; font-family: 'Inter', sans-serif; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.1);"><i class="fab fa-github"></i>Code</a>
+        <div class="button-container">
+          <a href="https://arxiv.org/pdf/2503.19625" class="button"><i class="fas fa-file-pdf"></i>Paper</a>
+          <a href="assets/pdf/supp.pdf" class="button"><i class="fas fa-file-pdf"></i>Supp</a>
+          <a href="https://youtu.be/9u89MLe9XL0?si=9E8Ky76ZFyr6ogur" class="button"><i class="fab fa-youtube"></i>Video</a>
+          <a href="https://github.com/Launch-on-Titania/DynOPETs" class="button"><i class="fab fa-github"></i>Code</a>
         </div>
-        <div class="video-container" style="margin-top: 40px; text-align: center;">
-          <iframe width="900" height="506" src="https://youtube.com/embed/9u89MLe9XL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://youtube.com/embed/9u89MLe9XL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="abstract-section" style="margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
-          <h2 style="font-family: 'Book Antiqua', serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">Abstract</h2>
-          <div style="font-family: 'Inter', serif; font-size: 1.1rem; line-height: 1.5; text-align: justify;">
+        <div class="abstract-section paper-section">
+          <h2 class="section-heading">Abstract</h2>
+          <div class="abstract-body">
             In the realm of object pose estimation, scenarios involving both dynamic objects and moving cameras are prevalent. However, the scarcity of corresponding real-world datasets significantly hinders the development and evaluation of robust pose estimation models. This is largely attributed to the inherent challenges in accurately annotating object poses in dynamic scenes captured by moving cameras. To bridge this gap, this paper presents a novel dataset DynOPETs and a dedicated data acquisition and annotation pipeline tailored for object pose estimation and tracking in such unconstrained environments. Our efficient annotation method innovatively integrates pose estimation and pose tracking techniques to generate pseudo-labels, which are subsequently refined through pose graph optimization. The resulting dataset offers accurate pose annotations for dynamic objects observed from moving cameras. To validate the effectiveness and value of our dataset, we perform comprehensive evaluations using 19 state-of-the-art methods, demonstrating its potential to accelerate research in this challenging domain. The dataset will be made publicly available to facilitate further exploration and advancement in the field.
           </div>
         </div>
-        <div class="pipeline-section" style="margin-top: 40px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
-          <h2 style="font-family: 'Book Antiqua', serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">Pipeline</h2>
-          <img src="assets/img/pipline.png" alt="Pipeline" style="max-width: 100%; height: auto; border: none; box-shadow: none;" />
+        <div class="pipeline-section paper-section" style="text-align: center;">
+          <h2 class="section-heading">Pipeline</h2>
+          <img src="assets/img/pipline.png" alt="Pipeline" />
         </div>
-        <div class="results-section" style="margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
-          <h2 style="font-family: 'Book Antiqua', serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">Results</h2>
-          <div style="font-family: 'Inter', serif; font-size: 1.1rem; line-height: 1.5; text-align: center;">
+        <div class="results-section paper-section" style="text-align: center;">
+          <h2 class="section-heading">Results</h2>
+          <div>
             For more qualitative visualization and analysis, please refer to our <a href="assets/pdf/supp.pdf" style="color: var(--global-theme-color); text-decoration: none;">supplementary materials</a>.
           </div>
         </div>
-        <div class="bibtex-section" style="margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
-          <h2 style="font-family: 'Book Antiqua', serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">BibTeX</h2>
+        <div class="bibtex-section paper-section">
+          <h2 class="section-heading">BibTeX</h2>
           <div class="bibtex-content" style="font-family: 'Courier New', monospace; font-size: 0.9rem; line-height: 1.4; text-align: left; background-color: #f5f5f5; color: var(--global-text-color); padding: 20px; border-radius: 8px; overflow-x: auto; border: 1px solid var(--global-border-color);">
             <pre style="margin: 0; white-space: pre; background: none; border: none; padding: 0; color: inherit;">@article{meng2025dynopets,
   title={DynOPETs: A Versatile Benchmark for Dynamic Object Pose Estimation and Tracking in Moving Camera Scenarios},
@@ -144,12 +270,12 @@ layout: default
           }
         </style>
 
-        <div class="contact-section" style="margin-top: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
-          <h2 style="font-family: 'Book Antiqua', serif; font-size: 1.8rem; font-weight: 600; margin-bottom: 20px; text-align: center;">Contact Us</h2>
-          <div style="font-family: 'Inter', serif; font-size: 1.1rem; line-height: 1.5; text-align: center;">
+        <div class="contact-section paper-section" style="text-align: center;">
+          <h2 class="section-heading">Contact Us</h2>
+          <div>
             <p style="margin-bottom: 15px;">
               <strong>Xiangting Meng:</strong> <span class="email" data-encoded="bWVuZ3h0QHNoYW5naGFpdGVjaC5lZHUuY24="></span><br>
-              <span style="margin-left: 93px;"><span class="email" data-encoded="YXJub3h0bWFubkBnbWFpbC5jb20="></span></span>
+              <span class="contact-indent"><span class="email" data-encoded="YXJub3h0bWFubkBnbWFpbC5jb20="></span></span>
             </p>
             <p>
               <strong>Jiaqi Yang:</strong> <span class="email" data-encoded="eWFuZ2pxMTIwMjJAc2hhbmdoYWl0ZWNoLmVkdS5jbg=="></span>
